@@ -1,0 +1,147 @@
+{
+  "type": "APL",
+  "version": "1.2",
+  "description": "Learn STEM APL document.",
+  "settings": {},
+  "theme": "light",
+  "import": [
+        {
+            "name": "alexa-viewport-profiles",
+            "version": "1.0.0"
+        },
+        {
+            "name": "alexa-layouts",                
+            "version": "1.0.0"
+        }
+    ],
+    "resources": [
+        {
+            "colors": {
+                "colorTextBody": "#000000",
+                "colorTextHeader": "#005200"
+            }
+        },
+        {
+            "description": "Font sizes",
+            "dimensions": {
+                "textSizeLarge": 60,
+                "textSizeMedium": 32,
+                "textSizeSmall": 24
+            }
+        },
+        {
+            "description": "Margins",
+            "dimensions": {
+                "marginTop": 40,
+                "marginLeft": 60,
+                "marginRight": 60,
+                "marginBottom": 40
+            }
+        }
+    ],
+    "styles": {
+        "textStyleHeader": {
+            "values": [
+                {
+                    "color": "@colorTextHeader",
+                    "fontSize": "@textSizeLarge",                        
+                    "fontStyle": "bold",
+                    "fontWeight": "200"
+                }
+            ]
+        },
+        "textStyleBody": {
+            "values": [
+                {
+                    "color": "@colorTextBody",
+                    "fontSize": "@textSizeMedium",
+                    "fontStyle": "bold",
+                    "fontWeight": "200"
+                }
+            ]
+        }
+    },
+  "onMount": [],
+  "graphics": {},
+  "commands": {},
+  "layouts": {},
+  "mainTemplate": {
+    "parameters": [
+      "payload"
+    ],
+    "items": [
+        {
+            "when": "${@viewport.shape == 'round'}",
+            "type": "Container",
+            "direction": "column",
+            "items": [
+                {
+                    "type": "Image",
+                    "source": "https://www.pexels.com/photo/160107/download/?search_query=laptop&tracking_id=ewh1y3ognif",
+                    "opacity": "0.2",
+                    "height": "100vh",
+                    "width": "100vw",
+                    "scale": "best-fill",
+                    "align": "center",
+                    "position": "absolute"
+                },
+                {
+                    "type": "AlexaHeader",
+                    "headerTitle": "Learn Stem",
+                    "style": "textStyleHeader",                        
+                    "headerAttributionImage": "https://upload.wikimedia.org/wikipedia/en/1/17/Stetson_Hatters_logo_%282018%29.png?download"
+                },
+                {
+                    "type": "Container",
+                    "paddingLeft": "@marginLeft",
+                    "paddingRight": "@marginRight",                        
+                    "paddingBottom": "@marginBottom",
+                    "items": [
+                        {
+                            "type": "Text",
+                            "text": "Welcome to Learn Stem Jeopardy! I'll ask you for the topic you want and your grade level. When you answer a question, please do so in Jeopardy style by phrasing your answer as 'What is...' Now to start. For which topic would you like a question? ",
+                            "style": "textStyleBody"
+                        }
+                    ],
+                    "grow": 1
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "height": "100vh",
+            "items": [
+                {
+                    "type": "Image",
+                    "source": "https://www.pexels.com/photo/160107/download/?search_query=laptop&tracking_id=ewh1y3ognif",
+                    "opacity": "0.2",
+                    "height": "100vh",
+                    "width": "100vw",
+                    "scale": "best-fill",
+                    "align": "center",
+                    "position": "absolute"
+                },
+                {
+                    "type": "AlexaHeader",
+                    "headerTitle": "Learn Stem",
+                    "style": "textStyleHeader",
+                    "headerAttributionImage": "https://upload.wikimedia.org/wikipedia/en/1/17/Stetson_Hatters_logo_%282018%29.png?download"
+                },
+                {
+                    "type": "Container",
+                    "paddingLeft": "@marginLeft",
+                    "paddingRight": "@marginRight",
+                    "paddingBottom": "@marginBottom",
+                    "items": [
+                        {
+                            "type": "Text",
+                            "text": "Welcome to Learn Stem Jeopardy! I'll ask you for the topic you want and your grade level. When you answer a question, please do so in Jeopardy style by phrasing your answer as 'What is...' Now to start. For which topic would you like a question? ",
+                            "style": "textStyleBody"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+  }
+}
