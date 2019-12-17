@@ -1,0 +1,404 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "learn stem",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel learn stem"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help learn stem"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop learn stem"
+                    ]
+                },
+                {
+                    "name": "CaptureQuestionTypeIntent",
+                    "slots": [
+                        {
+                            "name": "QType",
+                            "type": "AMAZON.CreativeWorkType",
+                            "samples": [
+                                "mathematics",
+                                "programming",
+                                "math",
+                                "code",
+                                "coding"
+                            ]
+                        },
+                        {
+                            "name": "GLevel",
+                            "type": "Grade",
+                            "samples": [
+                                "fifth",
+                                "fourth",
+                                "third",
+                                "second",
+                                "first"
+                            ]
+                        },
+                        {
+                            "name": "NewQ",
+                            "type": "NewQ"
+                        }
+                    ],
+                    "samples": [
+                        "please give me a {NewQ}",
+                        "give me a {NewQ} please",
+                        "give me {NewQ}",
+                        "give me a new {NewQ}",
+                        "give me a {NewQ}",
+                        "another {NewQ}",
+                        "ask me a {GLevel} grade {QType} question",
+                        "ask me {NewQ}",
+                        "{NewQ}",
+                        "ask me a {NewQ}",
+                        "I want a {NewQ}",
+                        "Can I get a {NewQ}",
+                        "Can I get a {NewQ} please",
+                        "{NewQ} please",
+                        "I want a {QType} question for {GLevel} grade",
+                        "I want a {GLevel} grade {QType} question",
+                        "I want a grade {GLevel} {QType} question",
+                        "{GLevel} please",
+                        "{GLevel}",
+                        "{GLevel} {QType}",
+                        "{QType} {GLevel}",
+                        "I want a {QType} question for grade {GLevel}",
+                        "I want a {QType} question",
+                        "{QType}",
+                        "{QType} please"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": [
+                        "navigate home learn stem"
+                    ]
+                },
+                {
+                    "name": "CaptureUserAnswerIntent",
+                    "slots": [
+                        {
+                            "name": "Answer",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "What are {Answer}",
+                        "What is {Answer} "
+                    ]
+                },
+                {
+                    "name": "RepeatQIntent",
+                    "slots": [
+                        {
+                            "name": "RepeatQ",
+                            "type": "RepeatQ"
+                        }
+                    ],
+                    "samples": [
+                        "Can you please {RepeatQ} the question",
+                        "Ask me the {RepeatQ} please",
+                        "Ask {RepeatQ} please",
+                        "Please {RepeatQ} the question",
+                        "What was the {RepeatQ}",
+                        "{RepeatQ} the question",
+                        "Ask me the {RepeatQ}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": [
+                        "pause learn stem"
+                    ]
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": [
+                        "resume learn stem"
+                    ]
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetAnswerIntent",
+                    "slots": [
+                        {
+                            "name": "right_answer",
+                            "type": "GetA"
+                        }
+                    ],
+                    "samples": [
+                        "please give me the {right_answer}",
+                        "tell me the {right_answer}",
+                        "please tell me the {right_answer}",
+                        "I don't know the {right_answer}",
+                        "give me the {right_answer}",
+                        "what is the {right_answer}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "AMAZON.CreativeWorkType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Math",
+                                "synonyms": [
+                                    "mathematics"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Coding",
+                                "synonyms": [
+                                    "programming",
+                                    "code"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Grade",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "fifth"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fourth"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "third"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "second"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "first"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "RepeatQ",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "question again"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "repeat"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "NewQ",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "another question"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "different question"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "new question"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "GetA",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "right answer",
+                                "synonyms": [
+                                    "correct answer"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "CaptureQuestionTypeIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "QType",
+                            "type": "AMAZON.CreativeWorkType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.202568924809.1056285217336"
+                            },
+                            "validations": [
+                                {
+                                    "type": "isInSet",
+                                    "prompt": "Slot.Validation.601474771558.1177986255941.295489125623",
+                                    "values": [
+                                        "coding",
+                                        "code",
+                                        "mathematics",
+                                        "math",
+                                        "programming"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "GLevel",
+                            "type": "Grade",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1269756704048.579367726408"
+                            }
+                        },
+                        {
+                            "name": "NewQ",
+                            "type": "NewQ",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "CaptureUserAnswerIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Answer",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.180183425639.1564216143405"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.202568924809.1056285217336",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say whether you want a math or coding question"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.601474771558.1177986255941.295489125623",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please specify whether you want a math or coding question"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.201390023795.653443031028",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What grade are you in?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.27820091590.937907722819",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "For which grade level would you like a question?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1269756704048.579367726408",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which grade would you like a question for?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "What grade are you in?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1402188689222.1510740775515",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please answer the question"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.180183425639.1564216143405",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please provide an answer."
+                    }
+                ]
+            }
+        ]
+    }
+}
